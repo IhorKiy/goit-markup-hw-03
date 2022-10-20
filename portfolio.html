@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -44,16 +48,19 @@
       <!--Work`s Portfolio-->
       <section>
         <h2 class="visually-hidden">Портфоліо робіт</h2>
-        <ul class="filter">
+        <div class="container">
+<ul class="filter">
           <li><button type="button" class="filter-btn">Усі</button></li>
           <li><button type="button" class="filter-btn">Веб-сайти</button></li>
           <li><button type="button" class="filter-btn">Додатки</button></li>
           <li><button type="button" class="filter-btn">Дизайн</button></li>
           <li><button type="button" class="filter-btn">Маркетинг</button></li>
         </ul>
-
-        <ul class="portfolio">
-          <li>
+        </div>
+        
+<div class="container">
+ <ul class="portfolio">
+          <li class="portfilio-list">
             <a href="" class="portfolio-a">
               <img
                 src="./images/img7.jpg"
@@ -65,7 +72,7 @@
               <p class="portfilio-list-p">Веб-сайт</p>
             </a>
           </li>
-          <li>
+          <li class="portfilio-list">
             <a href="" class="portfolio-a">
               <img
                 src="./images/img8.jpg"
@@ -78,7 +85,7 @@
               </h3>
               <p class="portfilio-list-p">Дизайн</p>
             </a>
-          </li>
+          </li class="portfilio-list">
           <li>
             <a href="" class="portfolio-a">
               <img
@@ -91,7 +98,7 @@
               <p class="portfilio-list-p">Додаток</p>
             </a>
           </li>
-          <li>
+          <li class="portfilio-list">
             <a href="" class="portfolio-a">
               <img
                 src="./images/img10.jpg"
@@ -103,7 +110,7 @@
               <p class="portfilio-list-p">Маркетинг</p>
             </a>
           </li>
-          <li>
+          <li class="portfilio-list">
             <a href="" class="portfolio-a">
               <img
                 src="./images/img11.jpg"
@@ -115,7 +122,7 @@
               <p class="portfilio-list-p">Додаток</p>
             </a>
           </li>
-          <li>
+          <li class="portfilio-list">
             <a href="" class="portfolio-a">
               <img
                 src="./images/img12.jpg"
@@ -127,7 +134,7 @@
               <p class="portfilio-list-p">Веб-сайт</p>
             </a>
           </li>
-          <li>
+          <li class="portfilio-list">
             <a href="" class="portfolio-a">
               <img
                 src="./images/img13.jpg"
@@ -139,7 +146,7 @@
               <p class="portfilio-list-p">Дизайн</p>
             </a>
           </li>
-          <li>
+          <li class="portfilio-list">
             <a href="" class="portfolio-a">
               <img
                 src="./images/img14.jpg"
@@ -151,7 +158,7 @@
               <p class="portfilio-list-p">Маркетинг</p>
             </a>
           </li>
-          <li>
+          <li class="portfilio-list">
             <a href="" class="portfolio-a">
               <img
                 src="./images/img15.jpg"
@@ -164,6 +171,8 @@
             </a>
           </li>
         </ul>
+</div>
+       
       </section>
     </main>
     <footer class="ftr">

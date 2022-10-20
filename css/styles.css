@@ -10,10 +10,16 @@ body {
   font-family: "Roboto", sans-serif;
   color: #212121;
 }
-
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 /* Header ***********************************************************/
 .header {
   background: var(--accent-color2);
+  border-bottom: 1px solid #ececec;
 }
 
 /* Navigation ******************************************************/
@@ -68,18 +74,26 @@ body {
 
 /* Hero **************************************************************************************/
 .hero {
+  padding: 200px;
   background-color: var(--background-1);
 }
 .hero-title {
+  width: 696px;
+  margin: 0 auto;
+
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
   color: var(--accent-color2);
 }
 .hero-btn {
+  display: block;
+  margin: 0 auto;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -239,7 +253,12 @@ body {
   overflow: hidden;
 }
 .portfolio {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
+  gap: 30px;
+}
+.portfilio-list {
 }
 .portfolio-a {
   text-decoration: none;
