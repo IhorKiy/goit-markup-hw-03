@@ -1,6 +1,6 @@
 :root {
   --accent-color: #2196f3;
-  --accent-color2: #ffffff;
+  --accent-color2: #fff;
   --color-p: #757575;
   --background-1: #2f303a;
   --background-2-w: #f5f4fa;
@@ -65,13 +65,10 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  padding: 24px, 0;
-}
+  }
 
 /* Navigation ******************************************************/
 .logo {
-  margin-right: 93px;
-
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -88,6 +85,8 @@ img {
 .list-nav {
   list-style: none;
   display: flex;
+
+  margin-left: 93px;
 }
 
 .list-nav-contact {
@@ -147,10 +146,12 @@ img {
 .hero {
   padding: 200px 0;
   background-color: var(--background-1);
+  text-align: center;
 }
 .hero-title {
   width: 696px;
   margin: 0 auto;
+  margin-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
@@ -162,15 +163,14 @@ img {
   color: var(--accent-color2);
 }
 .hero-btn {
-  display: block;
-  margin: 0 auto;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 4px;
 
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--accent-color2);
@@ -185,7 +185,7 @@ img {
 /* OUR ADVANTAGES **************************************************************************/
 .advantages {
   padding-top: 94px;
-  background-color: #f5f5f5;
+  background-color: var(--accent-color2);
 }
 
 .advantages-container {
@@ -228,7 +228,7 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 
-  background-color: #f5f5f5;
+  background-color:var(--accent-color2);
 }
 .activity-title {
   margin-bottom: 50px;
@@ -306,10 +306,14 @@ img {
 .ftr-list {
     list-style: none;
 }
+.ftr-list-item:not(:last-child){
+  margin-bottom: 9px;
+}
+
+
 .adrs {
   display: block;
-    margin-bottom: 9px;
-
+    
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -332,9 +336,7 @@ img {
   font-style: normal;
   text-decoration: none;
 }
-.mailto {
-  margin-bottom: 9px;
-}
+
 .adrs-com:hover,
 .adrs-com:focus {
   color: var(--accent-color);
@@ -364,6 +366,8 @@ img {
   list-style: none;
   background: var(--background-2-w);
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -413,7 +417,7 @@ img {
   color: inherit;
 }
 .portfolio-list-title {
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 
   font-weight: 700;
   font-size: 18px;
